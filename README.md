@@ -1,415 +1,373 @@
-Crie 10 fluxogramas acadêmicos em português utilizando corretamente os símbolos padrões de fluxograma.
+Crie 10 fluxogramas acadêmicos utilizando obrigatoriamente os símbolos corretos do padrão ANSI de fluxogramas.
+
+NÃO transforme tudo em retângulos.
 
 REGRAS OBRIGATÓRIAS:
-- Usar OVAL para “Início” e “Fim”.
-- Usar PARALELOGRAMO para entrada e saída de dados.
-- Usar RETÂNGULO para cálculos e processamento.
-- Usar LOSANGO para decisões e condições.
-- Todos os blocos devem estar conectados com setas.
-- Organizar os fluxogramas na vertical.
-- Utilizar estilo simples, limpo e profissional.
-- Colocar os textos dentro das formas geométricas.
-- Em decisões, identificar os caminhos com “Sim” e “Não”.
+- Terminador (oval/arredondado) → apenas para “Início” e “Fim”
+- Entrada/Saída (paralelogramo) → para leitura e exibição de dados
+- Processo (retângulo) → para cálculos e fórmulas
+- Decisão (losango) → para condições
+- Todos os blocos devem ser conectados por setas
+- Organizar verticalmente
+- Visual acadêmico simples
+- NÃO substituir símbolos
 
 ==================================================
-EXERCÍCIO 1 — SALÁRIO DIÁRIO
+FLUXOGRAMA 1 — SALÁRIO DIÁRIO
 ==================================================
 
-Descrição:
-Receber o valor do salário de um trabalhador, calcular e mostrar o valor diário deste salário.
-
-Fluxograma:
-
-[Oval]
-Início
+Terminador:
+“Início”
 
 ↓
 
-[Paralelogramo]
-Ler salário
+Entrada/Saída:
+“Ler salário”
 
 ↓
 
-[Retângulo]
-salario_diario = salario / 30
+Processo:
+“salario_diario = salario / 30”
 
 ↓
 
-[Paralelogramo]
-Mostrar salario_diario
+Entrada/Saída:
+“Mostrar salario_diario”
 
 ↓
 
-[Oval]
-Fim
+Terminador:
+“Fim”
 
 ==================================================
-EXERCÍCIO 2 — METADE DE UM NÚMERO
+FLUXOGRAMA 2 — METADE DE UM NÚMERO
 ==================================================
 
-Descrição:
-Calcular e mostrar a metade de um número informado pelo usuário.
-
-Fluxograma:
-
-[Oval]
-Início
+Terminador:
+“Início”
 
 ↓
 
-[Paralelogramo]
-Ler número
+Entrada/Saída:
+“Ler número”
 
 ↓
 
-[Retângulo]
-metade = numero / 2
+Processo:
+“metade = numero / 2”
 
 ↓
 
-[Paralelogramo]
-Mostrar metade
+Entrada/Saída:
+“Mostrar metade”
 
 ↓
 
-[Oval]
-Fim
+Terminador:
+“Fim”
 
 ==================================================
-EXERCÍCIO 3 — SOMA DE TRÊS NÚMEROS
+FLUXOGRAMA 3 — SOMA DE TRÊS NÚMEROS
 ==================================================
 
-Descrição:
-Ler três números quaisquer e mostrar o resultado da soma destes números.
-
-Fluxograma:
-
-[Oval]
-Início
+Terminador:
+“Início”
 
 ↓
 
-[Paralelogramo]
-Ler numero1
+Entrada/Saída:
+“Ler numero1”
 
 ↓
 
-[Paralelogramo]
-Ler numero2
+Entrada/Saída:
+“Ler numero2”
 
 ↓
 
-[Paralelogramo]
-Ler numero3
+Entrada/Saída:
+“Ler numero3”
 
 ↓
 
-[Retângulo]
-soma = numero1 + numero2 + numero3
+Processo:
+“soma = numero1 + numero2 + numero3”
 
 ↓
 
-[Paralelogramo]
-Mostrar soma
+Entrada/Saída:
+“Mostrar soma”
 
 ↓
 
-[Oval]
-Fim
+Terminador:
+“Fim”
 
 ==================================================
-EXERCÍCIO 4 — MÉDIA DE QUATRO NÚMEROS
+FLUXOGRAMA 4 — MÉDIA DE QUATRO NÚMEROS
 ==================================================
 
-Descrição:
-Ler quatro números quaisquer e mostrar o resultado da média destes números.
-
-Fluxograma:
-
-[Oval]
-Início
+Terminador:
+“Início”
 
 ↓
 
-[Paralelogramo]
-Ler n1
+Entrada/Saída:
+“Ler n1”
 
 ↓
 
-[Paralelogramo]
-Ler n2
+Entrada/Saída:
+“Ler n2”
 
 ↓
 
-[Paralelogramo]
-Ler n3
+Entrada/Saída:
+“Ler n3”
 
 ↓
 
-[Paralelogramo]
-Ler n4
+Entrada/Saída:
+“Ler n4”
 
 ↓
 
-[Retângulo]
-media = (n1 + n2 + n3 + n4) / 4
+Processo:
+“media = (n1 + n2 + n3 + n4) / 4”
 
 ↓
 
-[Paralelogramo]
-Mostrar media
+Entrada/Saída:
+“Mostrar media”
 
 ↓
 
-[Oval]
-Fim
+Terminador:
+“Fim”
 
 ==================================================
-EXERCÍCIO 5 — ÁREA DO RETÂNGULO
+FLUXOGRAMA 5 — ÁREA DO RETÂNGULO
 ==================================================
 
-Descrição:
-Calcular a área de um retângulo.
-
-Fluxograma:
-
-[Oval]
-Início
+Terminador:
+“Início”
 
 ↓
 
-[Paralelogramo]
-Ler base
+Entrada/Saída:
+“Ler base”
 
 ↓
 
-[Paralelogramo]
-Ler altura
+Entrada/Saída:
+“Ler altura”
 
 ↓
 
-[Retângulo]
-area = base * altura
+Processo:
+“area = base * altura”
 
 ↓
 
-[Paralelogramo]
-Mostrar area
+Entrada/Saída:
+“Mostrar area”
 
 ↓
 
-[Oval]
-Fim
+Terminador:
+“Fim”
 
 ==================================================
-EXERCÍCIO 6 — ÁREA DO CÍRCULO
+FLUXOGRAMA 6 — ÁREA DO CÍRCULO
 ==================================================
 
-Descrição:
-Calcular a área de um círculo.
-
-Fluxograma:
-
-[Oval]
-Início
+Terminador:
+“Início”
 
 ↓
 
-[Paralelogramo]
-Ler raio
+Entrada/Saída:
+“Ler raio”
 
 ↓
 
-[Retângulo]
-area = 3.14 * raio * raio
+Processo:
+“area = 3.14 * raio * raio”
 
 ↓
 
-[Paralelogramo]
-Mostrar area
+Entrada/Saída:
+“Mostrar area”
 
 ↓
 
-[Oval]
-Fim
+Terminador:
+“Fim”
 
 ==================================================
-EXERCÍCIO 7 — IDADE EM DIAS
+FLUXOGRAMA 7 — IDADE EM DIAS
 ==================================================
 
-Descrição:
-Ler a idade de uma pessoa expressa em anos, meses e dias e mostrar a idade expressa apenas em dias.
-
-Fluxograma:
-
-[Oval]
-Início
+Terminador:
+“Início”
 
 ↓
 
-[Paralelogramo]
-Ler anos
+Entrada/Saída:
+“Ler anos”
 
 ↓
 
-[Paralelogramo]
-Ler meses
+Entrada/Saída:
+“Ler meses”
 
 ↓
 
-[Paralelogramo]
-Ler dias
+Entrada/Saída:
+“Ler dias”
 
 ↓
 
-[Retângulo]
-total_dias = (anos * 365) + (meses * 30) + dias
+Processo:
+“total_dias = (anos * 365) + (meses * 30) + dias”
 
 ↓
 
-[Paralelogramo]
-Mostrar total_dias
+Entrada/Saída:
+“Mostrar total_dias”
 
 ↓
 
-[Oval]
-Fim
+Terminador:
+“Fim”
 
 ==================================================
-EXERCÍCIO 8 — MAIOR OU MENOR QUE 10
+FLUXOGRAMA 8 — MAIOR OU MENOR QUE 10
 ==================================================
 
-Descrição:
-Ler um número qualquer e verificar se este número é maior ou igual a 10.
-
-Fluxograma:
-
-[Oval]
-Início
+Terminador:
+“Início”
 
 ↓
 
-[Paralelogramo]
-Ler numero
+Entrada/Saída:
+“Ler numero”
 
 ↓
 
-[Losango]
-numero >= 10 ?
+Decisão:
+“numero >= 10 ?”
 
-├── Sim →
-[Paralelogramo]
-Mostrar "Maior"
+→ SIM →
 
-└── Não →
-[Paralelogramo]
-Mostrar "Menor"
+Entrada/Saída:
+“Mostrar Maior”
+
+→ NÃO →
+
+Entrada/Saída:
+“Mostrar Menor”
 
 ↓
 
-[Oval]
-Fim
+Terminador:
+“Fim”
 
 ==================================================
-EXERCÍCIO 9 — MÉDIA MAIOR QUE 100
+FLUXOGRAMA 9 — MÉDIA MAIOR QUE 100
 ==================================================
 
-Descrição:
-Ler 5 valores, calcular a média aritmética destes valores e verificar se o resultado é maior que 100.
-
-Fluxograma:
-
-[Oval]
-Início
+Terminador:
+“Início”
 
 ↓
 
-[Paralelogramo]
-Ler v1
+Entrada/Saída:
+“Ler v1”
 
 ↓
 
-[Paralelogramo]
-Ler v2
+Entrada/Saída:
+“Ler v2”
 
 ↓
 
-[Paralelogramo]
-Ler v3
+Entrada/Saída:
+“Ler v3”
 
 ↓
 
-[Paralelogramo]
-Ler v4
+Entrada/Saída:
+“Ler v4”
 
 ↓
 
-[Paralelogramo]
-Ler v5
+Entrada/Saída:
+“Ler v5”
 
 ↓
 
-[Retângulo]
-media = (v1 + v2 + v3 + v4 + v5) / 5
+Processo:
+“media = (v1 + v2 + v3 + v4 + v5) / 5”
 
 ↓
 
-[Losango]
-media > 100 ?
+Decisão:
+“media > 100 ?”
 
-├── Sim →
-[Paralelogramo]
-Mostrar "Maior"
+→ SIM →
 
-└── Não →
-[Paralelogramo]
-Mostrar "Menor"
+Entrada/Saída:
+“Mostrar Maior”
+
+→ NÃO →
+
+Entrada/Saída:
+“Mostrar Menor”
 
 ↓
 
-[Oval]
-Fim
+Terminador:
+“Fim”
 
 ==================================================
-EXERCÍCIO 10 — POSITIVO, NEGATIVO OU ZERO
+FLUXOGRAMA 10 — POSITIVO, NEGATIVO OU ZERO
 ==================================================
 
-Descrição:
-Mostrar se um número qualquer é positivo, negativo ou zero.
-
-Fluxograma:
-
-[Oval]
-Início
+Terminador:
+“Início”
 
 ↓
 
-[Paralelogramo]
-Ler numero
+Entrada/Saída:
+“Ler numero”
 
 ↓
 
-[Losango]
-numero > 0 ?
+Decisão:
+“numero > 0 ?”
 
-├── Sim →
-[Paralelogramo]
-Mostrar "Positivo"
+→ SIM →
 
-└── Não →
+Entrada/Saída:
+“Mostrar Positivo”
 
-    [Losango]
-    numero < 0 ?
+→ NÃO →
 
-    ├── Sim →
-    [Paralelogramo]
-    Mostrar "Negativo"
+Decisão:
+“numero < 0 ?”
 
-    └── Não →
-    [Paralelogramo]
-    Mostrar "Zero"
+→ SIM →
+
+Entrada/Saída:
+“Mostrar Negativo”
+
+→ NÃO →
+
+Entrada/Saída:
+“Mostrar Zero”
 
 ↓
 
-[Oval]
-Fim
+Terminador:
+“Fim”
