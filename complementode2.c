@@ -20,27 +20,18 @@ int main() {
         printf("Digite o numero decimal: ");
         scanf("%d", &num);
 
-        // Limites do sinal e magnitude
         int max = (1 << (n - 1)) - 1;
-        int min = -max;
+        int min = -(1 << (n - 1));
 
         if(num > max || num < min) {
             printf("Overflow!\n");
             return 0;
         }
 
-        // Bit de sinal
-        if(num < 0) {
-            printf("1");
-            num = -num;
-        }
-        else {
-            printf("0");
-        }
+        unsigned int bin = num & ((1 << n) - 1);
 
-        // Magnitude
-        for(int i = n - 2; i >= 0; i--) {
-            printf("%d", (num >> i) & 1);
+        for(int i = n - 1; i >= 0; i--) {
+            printf("%d", (bin >> i) & 1);
         }
 
         printf("\n");
@@ -60,14 +51,13 @@ int main() {
 
         int valor = 0;
 
-        // Converte a magnitude
-        for(int i = 1; i < n; i++) {
+        for(int i = 0; i < n; i++) {
             valor = valor * 2 + (bin[i] - '0');
         }
 
-        // Verifica o sinal
-        if(bin[0] == '1')
-            valor = -valor;
+        if(bin[0] == '1') {
+            valor -= (1 << n);
+        }
 
         printf("Decimal: %d\n", valor);
     }
