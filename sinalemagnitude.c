@@ -1,35 +1,79 @@
 #include <stdio.h>
+#include <string.h>
 
 int main() {
 
-    // Variável do número
-    int num;
+    int opcao, n;
 
-    // Entrada do usuário
-    printf("Digite um numero: ");
-    scanf("%d", &num);
+    printf("Quantidade de bits: ");
+    scanf("%d", &n);
 
-    // Verifica se é negativo
-    if(num < 0) {
+    printf("\n1 - Decimal para Binario\n");
+    printf("2 - Binario para Decimal\n");
+    printf("Opcao: ");
+    scanf("%d", &opcao);
 
-        // Mostra bit de sinal 1
-        printf("1");
+    if(opcao == 1) {
 
-        // Transforma em positivo
-        num = -num;
+        int num;
+
+        printf("Digite o numero decimal: ");
+        scanf("%d", &num);
+
+        // Limites do sinal e magnitude
+        int max = (1 << (n - 1)) - 1;
+        int min = -max;
+
+        if(num > max || num < min) {
+            printf("Overflow!\n");
+            return 0;
+        }
+
+        // Bit de sinal
+        if(num < 0) {
+            printf("1");
+            num = -num;
+        }
+        else {
+            printf("0");
+        }
+
+        // Magnitude
+        for(int i = n - 2; i >= 0; i--) {
+            printf("%d", (num >> i) & 1);
+        }
+
+        printf("\n");
     }
+
+    else if(opcao == 2) {
+
+        char bin[100];
+
+        printf("Digite o numero binario: ");
+        scanf("%s", bin);
+
+        if(strlen(bin) != n) {
+            printf("Quantidade de bits invalida!\n");
+            return 0;
+        }
+
+        int valor = 0;
+
+        // Converte a magnitude
+        for(int i = 1; i < n; i++) {
+            valor = valor * 2 + (bin[i] - '0');
+        }
+
+        // Verifica o sinal
+        if(bin[0] == '1')
+            valor = -valor;
+
+        printf("Decimal: %d\n", valor);
+    }
+
     else {
-
-        // Se for positivo
-        // imprime sinal 0
-        printf("0");
-    }
-
-    // Mostra os outros 7 bits
-    for(int i = 6; i >= 0; i--) {
-
-        // Imprime bit por bit
-        printf("%d", (num >> i) & 1);
+        printf("Opcao invalida!\n");
     }
 
     return 0;
